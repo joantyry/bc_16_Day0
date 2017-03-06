@@ -1,23 +1,23 @@
 import unittest
-from primeNumbers import primeNumbers, num
+from primeNumbers import primeNumbers
 class TestSolution(unittest.TestCase):
+
 	def test_alphabet(self):
 		self.assertTrue(type, int)
 
 	def test_one(self):
-		self.assertFalse(primeNumbers (num = 1),)
+		self.assertEqual(primeNumbers (1),"Null")
 		
 	def test_negative(self):
-		self.assertFalse(num < 0, false)
+		self.assertEqual(primeNumbers(-1),"The number must be positive")
 
-	def test_integers(self):
-		pass
+	def test_ifEmpty(self):
+		self.assertEqual(primeNumbers(""),"Input a number")
 	
-	def test_squareroots(self):
-		pass
+	def test_ifPrime(self):
+		self.assertEqual(primeNumbers(10),[2,3,5,7])
 
-	def test_number_generates_prime_numbers(self):
-		pass
+	
 
 
 if __name__ =="__main__":
